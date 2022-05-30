@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header.htm',{})
+      <main class="mainpage">
+        <section data-fullscreen class="mainpage__slider main-slider">
+          <div class="main-slider__container main-slider__container_wide">
+            <div class="main-slider__container body-main-slider">
+              <div class="body-main-slider__swiper">
+                <div class="body-main-slider__slide slide-main-slider">
+                  <div class="slide-main-slider__content">
+                    <div
+                      class="slide-main-slider__header block-header block-header_big block-header_left"
+                    >
+                      <div class="block-header__sub-title">
+                        Chase the new Flavour
+                      </div>
+                      <h2 class="block-header__title">
+                        The key to Fine dining
+                      </h2>
+                    </div>
+                    <div class="slide-main-slider__text">
+                      Sit tellus lobortis sed senectus vivamus molestie.
+                      Condimentum volutpat morbi facilisis quam scelerisque
+                      sapien. Et, penatibus aliquam amet tellus
+                    </div>
+                    <a href="" class="slide-main-slider__button button"
+                      >Explore Menu</a
+                    >
+                  </div>
+                  <a href class="slide-main-slider__image-ibg">
+                    <img
+                      class="swiper-lazy"
+                      data-src="@img/mainpage/mainslider/01.jpg"
+                      alt="Картинка еды"
+                    />
+                  </a>
+                </div>
+                <div class="body-main-slider__slide slide-main-slider">
+                  <div class="slide-main-slider__content">
+                    <div
+                      class="slide-main-slider__header block-header block-header_big block-header_left"
+                    >
+                      <div class="block-header__sub-title">
+                        Chase the new Flavour
+                      </div>
+                      <h2 class="block-header__title">The key</h2>
+                    </div>
+                    <div class="slide-main-slider__text">
+                      Sit tellus lobortis sed senectus vivamus molestie.
+                    </div>
+                    <a href="" class="slide-main-slider__button button"
+                      >Explore Menu</a
+                    >
+                  </div>
+                  <a href class="slide-main-slider__image-ibg">
+                    <img
+                      class="swiper-lazy"
+                      data-src="@img/mainpage/mainslider/02.jpg"
+                      alt="Картинка еды"
+                    />
+                  </a>
+                </div>
+                <div class="body-main-slider__slide slide-main-slider">
+                  <div class="slide-main-slider__content">
+                    <div
+                      class="slide-main-slider__header block-header block-header_big block-header_left"
+                    >
+                      <div class="block-header__sub-title">
+                        Chase the new Flavour
+                      </div>
+                      <h2 class="block-header__title">
+                        The key to Fine dining
+                      </h2>
+                    </div>
+                    <div class="slide-main-slider__text">
+                      Sit tellus lobortis sed senectus vivamus molestie.
+                      Condimentum volutpat morbi facilisis quam scelerisque
+                      sapien. Et, penatibus aliquam amet tellus
+                    </div>
+                    <a href="" class="slide-main-slider__button button"
+                      >Explore Menu</a
+                    >
+                  </div>
+                  <a href class="slide-main-slider__image-ibg">
+                    <img
+                      class="swiper-lazy"
+                      data-src="@img/mainpage/mainslider/03.jpg"
+                      alt="Картинка еды"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="body-main-slider__controll"></div>
+            </div>
+            <nav class="main-slider__menu menu-main-slider">
+              <a
+                href=""
+                class="menu-main-slider__link menu-main-slider__link_current"
+                >#Gericht</a
+              >
+              <a href="" class="menu-main-slider__link">#Bar</a>
+            </nav>
+            <button
+              data-goto="about-section"
+              data-da=".body-main-slider,1445,last"
+              type="button"
+              class="main-slider__scroll scroll"
+            >
+              Scroll
+            </button>
+          </div>
+        </section>
+        <div class="mainpage__body">
+          <section
+            id="about-section"
+            data-bg
+            class="mainpage__about about-section"
+          >
+            <div class="about-section__container">
+              <div class="about-section__content">
+                <h3 class="about-section__title">About Us</h3>
+                <div class="about-section__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
+                  pharetra adipiscing ultrices vulputate posuere tristique. In
+                  sed odio nec aliquet eu proin mauris et.
+                </div>
+                <a href="" class="about-section__button button">Know More</a>
+              </div>
+              <div class="about-section__knife">
+                <img src="@img/mainpage/about/knives.png" alt="Нож" />
+              </div>
+              <div class="about-section__content">
+                <h3 class="about-section__title">Our History</h3>
+                <div class="about-section__text">
+                  Adipiscing tempus ullamcorper lobortis odio tellus arcu
+                  volutpat. Risus placerat morbi volutpat habitasse interdum mi
+                  aliquam In sed odio nec aliquet.
+                </div>
+                <a href="" class="about-section__button button">Know More</a>
+              </div>
+            </div>
+          </section>
+          <section class="book">
+            <div data-decor class="book__container">
+              <div class="book__body">
+                <div class="book__header block-header">
+                  <div class="block-header__sub-title">Reservations</div>
+                  <h2 class="block-header__title">Book A Table</h2>
+                </div>
+                <form
+                  data-dev
+                  data-popup-massage="#formMessage"
+                  method="POST"
+                  action="#"
+                  class="book__form form-book"
+                >
+                  <div class="form-book__lines">
+                    <div class="form-book__line">
+                      <select name="form[]" class="form">
+                        <option value="1" selected>1 Person</option>
+                        <option value="2">2 Person</option>
+                        <option value="3">3 Person</option>
+                        <option value="4">4 Person</option>
+                      </select>
+                    </div>
+                    <div class="form-book__line">
+                      <div class="form-book__input _icon-select-arrow">
+                        <input
+                          autocomplete="off"
+                          type="text"
+                          name="form[]"
+                          data-error="Ошибка"
+                          data-required
+                          placeholder="12/05/2021"
+                          data-calendar
+                          class="input-dark"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-book__line">
+                      <select data-scroll name="form[]" class="form">
+                        <option value="1" selected>11:00 AM</option>
+                        <option value="2">12:00 AM</option>
+                        <option value="3">1:00 PM</option>
+                        <option value="4">2:00 PM</option>
+                        <option value="5">3:00 PM</option>
+                        <option value="6">4:00 PM</option>
+                        <option value="7">5:00 PM</option>
+                        <option value="8">6:00 PM</option>
+                      </select>
+                    </div>
+                  </div>
+                  <button type="submit" class="book__button button">
+                    Book Now
+                  </button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="menu-block">
+            <div
+              data-decor
+              class="menu-block__container menu-block__container_wide"
+            >
+              <nav class="menu-block__menu">
+                <ul class="menu-block__list">
+                  <li class="menu-block__item">
+                    <a href="" class="menu-block__link">Bar Menu</a>
+                  </li>
+                  <li class="menu-block__item">
+                    <a href="" class="menu-block__link">Food Menu</a>
+                  </li>
+                  <li class="menu-block__item">
+                    <a href="" class="menu-block__link">Desserts Menu</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu-block__bg">
+              <img src="@img/mainpage/menu/bg.jpg" alt="" />
+            </div>
+          </section>
+          <section class="special">
+            <div class="special__container">
+              <div class="special__header block-header">
+                <div class="block-header__sub-title">
+                  Menu that fits you palatte
+                </div>
+                <h2 class="block-header__title">Today’s Special</h2>
+              </div>
+              <div class="special__body">
+                <div class="special__table table-special">
+                  <h3 class="table-special__title">Wine & Beer</h3>
+                  <div class="table-special__body">
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">
+                          Chapel Hill Shiraz
+                        </div>
+                        <div class="table-special__price">$56</div>
+                      </div>
+                      <div class="table-special__info">AU | Bottle</div>
+                    </div>
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">Catena Malbec</div>
+                        <div class="table-special__price">$86</div>
+                      </div>
+                      <div class="table-special__info">AU | Bottle</div>
+                    </div>
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">La Vieille Rosé</div>
+                        <div class="table-special__price">$44</div>
+                      </div>
+                      <div class="table-special__info">AU | Bottle</div>
+                    </div>
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">Catena Malbec</div>
+                        <div class="table-special__price">$86</div>
+                      </div>
+                      <div class="table-special__info">AU | Bottle</div>
+                    </div>
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">La Vieille Rosé</div>
+                        <div class="table-special__price">$44</div>
+                      </div>
+                      <div class="table-special__info">AU | Bottle</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="special__image">
+                  <img src="@img/mainpage/special/image.png" alt="ЧТо-то" />
+                </div>
+                <div class="special__table table-special">
+                  <h3 class="table-special__title">Cocktails</h3>
+                  <div class="table-special__body">
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">
+                          Chapel Hill Shiraz
+                        </div>
+                        <div class="table-special__price">$56</div>
+                      </div>
+                      <div class="table-special__info">
+                        Aperol | Villa Marchesi prosecco | soda | 30ml
+                      </div>
+                    </div>
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">Catena Malbec</div>
+                        <div class="table-special__price">$86</div>
+                      </div>
+                      <div class="table-special__info">AU | Bottle</div>
+                    </div>
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">La Vieille Rosé</div>
+                        <div class="table-special__price">$44</div>
+                      </div>
+                      <div class="table-special__info">AU | Bottle</div>
+                    </div>
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">
+                          Chapel Hill Shiraz
+                        </div>
+                        <div class="table-special__price">$56</div>
+                      </div>
+                      <div class="table-special__info">
+                        Aperol | Villa Marchesi prosecco | soda | 30ml
+                      </div>
+                    </div>
+                    <div class="table-special__item">
+                      <div class="table-special__header">
+                        <div class="table-special__value">Catena Malbec</div>
+                        <div class="table-special__price">$86</div>
+                      </div>
+                      <div class="table-special__info">AU | Bottle</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="special__button button">View More</a>
+            </div>
+          </section>
+          <section data-bg class="chef">
+            <div class="chef__container">
+              <div class="chef__column">
+                <div class="chef__image">
+                  <img src="@img/chef/image.jpg" alt="chef" />
+                </div>
+              </div>
+              <div class="chef__column">
+                <div class="chef__content">
+                  <div class="chef__header block-header block-header_left">
+                    <div class="block-header__sub-title">Chef’s Word</div>
+                    <h2 class="block-header__title">What we believe in</h2>
+                  </div>
+                  <div class="chef__text _icon-quote">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                    auctor sit. auctor sit iaculis in arcu. Vulputate nulla
+                    lobortis mauris eget sit. Nulla scelerisque scelerisque
+                    congue ac consequat, aliquam molestie lectus eu. Congue
+                    iaculis integer curabitur semper sit nunc.
+                  </div>
+                  <div class="chef__info info-chef">
+                    <div class="info-chef__title">Kevin Luo</div>
+                    <div class="info-chef__text">Chef & Founder</div>
+                  </div>
+                  <div class="chef__signature">
+                    <img src="@img/chef/signature.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <div data-watch="video" class="video-module">
+            <video
+              id="video-module"
+              data-full="files/main.mp4"
+              data-src="files/preview.mp4"
+              muted
+              class="video-module__item"
+            ></video>
+          </div>
+          <section class="gallery">
+            <div class="gallery__container">
+              <div class="gallery__content">
+                <div class="gallery__header block-header block-header_left">
+                  <div class="block-header__sub-title">Instagram</div>
+                  <h2 class="block-header__title">Photo Gallery</h2>
+                </div>
+                <div class="gallery__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.
+                </div>
+                <a href="" class="gallery__button button">View More</a>
+              </div>
+              <div class="gallery__body">
+                <div class="gallery__slider">
+                  <div data-gallery class="gallery__swiper">
+                    <a href="@img/gallery/01.jpg" class="gallery__slide-ibg">
+                      <img
+                        class="swiper-lazy"
+                        data-src="@img/gallery/01.jpg"
+                        alt="Картинка"
+                      />
+                    </a>
+                    <a href="@img/gallery/02.jpg" class="gallery__slide-ibg">
+                      <img
+                        class="swiper-lazy"
+                        data-src="@img/gallery/02.jpg"
+                        alt="Картинка"
+                      />
+                    </a>
+                    <a href="@img/gallery/03.jpg" class="gallery__slide-ibg">
+                      <img
+                        class="swiper-lazy"
+                        data-src="@img/gallery/03.jpg"
+                        alt="Картинка"
+                      />
+                    </a>
+                    <a href="@img/gallery/04.jpg" class="gallery__slide-ibg">
+                      <img
+                        class="swiper-lazy"
+                        data-src="@img/gallery/04.jpg"
+                        alt="Картинка"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>

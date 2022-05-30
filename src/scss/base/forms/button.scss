@@ -1,0 +1,18 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	padding: rem(8) rem(32);
+	@extend %cuf;
+	font-weight: 700;
+	line-height: 175%;
+	background-color: $mainYellow;
+	color: $mainDark;
+	text-align: center;
+	transition: background-color 0.3s ease 0s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: $mainDarkYellow;
+		}
+	}
+}

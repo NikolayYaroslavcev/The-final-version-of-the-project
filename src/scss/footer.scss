@@ -1,0 +1,129 @@
+//====================================================================================================
+.footer {
+	@include adaptiveValue("padding-top", 150, 40);
+	@include adaptiveValue("padding-bottom", 140, 40);
+	position: relative;
+	z-index: 2;
+	// .footer__container
+	&__container {
+	}
+	// .footer__body
+	&__body {
+		display: grid;
+		row-gap: 30px;
+		text-align: center;
+		@media (min-width: $tablet) {
+			align-items: flex-start;
+			column-gap: 20px;
+			justify-content: space-between;
+			grid-template-columns: 300px 1fr 300px;
+		}
+	}
+	// .footer__contacts
+	&__contacts {
+		@media (min-width: $tablet) {
+			&:first-child {
+				justify-self: start;
+			}
+			&:last-child {
+				justify-self: end;
+			}
+		}
+		@media (max-width: $tablet) {
+			&:first-child {
+				order: 2;
+			}
+			&:last-child {
+				order: 3;
+			}
+		}
+	}
+	// .footer__main
+	&__main {
+		text-align: center;
+		@media (max-width: $tablet) {
+			order: 1;
+		}
+	}
+
+	// .footer__copy
+	&__copy {
+		@include adaptiveValue("padding-top", 80, 30);
+		text-align: center;
+	}
+}
+.contacts-footer {
+	display: grid;
+	gap: 25px;
+	// .contacts-footer__title
+	&__title {
+		color: #f5efdb;
+		@extend %cuf;
+		font-size: rem(32);
+		line-height: 130%;
+	}
+	// .contacts-footer__text
+	&__text {
+	}
+	// .contacts-footer__items
+	&__items {
+		display: grid;
+		justify-content: center;
+		gap: 15px;
+	}
+	// .contacts-footer__link
+	&__link {
+	}
+	// .contacts-footer__item
+	&__item {
+		display: grid;
+		gap: 10px;
+		justify-content: center;
+	}
+}
+.main-footer {
+	// .main-footer__title
+	&__title {
+		text-transform: uppercase;
+		color: #dcca87;
+		@extend %cuf;
+		line-height: 130%;
+		font-weight: 700;
+		letter-spacing: 0.04em;
+		@include adaptiveValue("font-size", 64, 40);
+	}
+	// .main-footer__text
+	&__text {
+		line-height: 175%;
+		text-align: center;
+		letter-spacing: 0.04em;
+		color: #fff;
+		display: inline-block;
+		max-width: rem(438);
+		margin: 0 0 em(16, 16) 0px;
+		&::after {
+			margin: em(16, 14) 0px 0px 0px;
+			display: block;
+			@extend %ic;
+			content: "\e905";
+			font-size: rem(14);
+			color: $mainDarkYellow;
+		}
+	}
+	// .main-footer__social
+	&__social {
+	}
+}
+.social-footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: rem(18);
+	// .social-footer__link
+	&__link {
+		font-size: rem(20);
+		color: #f5efdb;
+	}
+}
+
+//====================================================================================================
